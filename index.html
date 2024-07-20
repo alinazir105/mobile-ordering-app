@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Ali's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+        </div>
+    </header>
+
+    <section class="menu-items" id="menu-container">
+    </section>
+
+    <section class="checkout" id="checkout">
+        <h5>Your Order</h5>
+        <div class="checkout-content" id="checkout-content"></div>
+    </section>
+
+    <section class="form-container" id="form-container">
+        <h6>Enter card details</h6>
+        <form id="payment-form">
+            <input type="text" name="name" id="name-input" placeholder="Enter your name" required maxlength="50">
+            <input type="number" name="card" id="card-input" placeholder="Enter card number" required min="1000000000000000" max="9999999999999999">
+            <input type="number" name="cvv" id="cvv-input" placeholder="Enter CVV" required min="100" max="999">
+            <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
+        </form>
+    </section>
+
+    <section class="thanks-msg" id="thanks-msg">
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
